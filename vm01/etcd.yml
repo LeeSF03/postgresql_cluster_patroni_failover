@@ -1,0 +1,12 @@
+name: "etcd1"
+data-dir: /var/lib/etcd/default.etcd
+
+initial-cluster-state: "new"
+initial-cluster-token: "etcd-cluster-1"
+initial-cluster: "etcd0=http://192.168.0.191:2380,etcd1=http://192.168.0.165:2380"
+
+listen-peer-urls: "http://192.168.0.165:2380,http://127.0.0.1:2380"
+initial-advertise-peer-urls: "http://192.168.165:2380"
+
+listen-client-urls: "http://192.168.0.165:2379,http://127.0.0.1:2379"
+advertise-client-urls: "http://192.168.0.165:2379"
